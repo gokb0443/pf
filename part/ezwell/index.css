@@ -392,6 +392,18 @@ label[for] {
     color: #295ebe;
 }
 
+
+/* 1차 메뉴 아이템 끝 */
+
+
+
+/* 2차 메뉴 아이템 시작 */
+
+.top-bar>.menu-box-1>ul ul {
+    text-align: center;
+    padding-top: 20px;
+}
+
 .top-bar>.menu-box-1:hover>ul ul {
     display: block;
     background-color: white;
@@ -399,13 +411,16 @@ label[for] {
 
 .top-bar>.menu-box-1>ul ul>li>a {
     display: block;
+    padding:20px;
+
 }
 
 .top-bar>.menu-box-1>ul ul>li:hover>a {
     color: #295ebe;
 }
 
-/* 1차 메뉴 아이템 끝 */
+/* 2차 메뉴 아이템 끝 */
+
 
 
 
