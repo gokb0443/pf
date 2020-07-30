@@ -367,19 +367,20 @@ label[for] {
 
 /* 1차 메뉴 아이템 시작 */
 
-
-.top-bar>.menu-box-1>ul ul {
-    display: none;
+.top-bar>.menu-box-1>ul {
+    
 }
 
-.top-bar>.menu-box-1>.menu-item {
-    width: 1030px;
+
+.top-bar>.menu-box-1>ul>li {
+    padding: 0 70px;
+    position: relative;
 }
 
-.top-bar>.menu-box-1>.menu-item>li>a {
+.top-bar>.menu-box-1>ul>li>a {
     font-size: 18px;
     font-weight: 600;
-    padding: 0 70px;
+    text-align: center;
 }
 
 .top-bar.hover {
@@ -387,7 +388,7 @@ label[for] {
     color: black;
 }
 
-.top-bar>.menu-box-1>.menu-item>li:hover>a {
+.top-bar>.menu-box-1>ul>li:hover>a {
     background-color: white;
     color: #295ebe;
 }
@@ -400,24 +401,20 @@ label[for] {
 /* 2차 메뉴 아이템 시작 */
 
 .top-bar>.menu-box-1>ul ul {
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
     text-align: center;
-    padding-top: 20px;
-}
-
-.top-bar>.menu-box-1:hover>ul ul {
-    display: block;
     background-color: white;
+    opacity: 0.5;
 }
 
-.top-bar>.menu-box-1>ul ul>li>a {
+.top-bar>.menu-box-1>ul ul > li > a {
+    padding:10px 0;
     display: block;
-    padding:20px;
-
 }
 
-.top-bar>.menu-box-1>ul ul>li:hover>a {
-    color: #295ebe;
-}
 
 /* 2차 메뉴 아이템 끝 */
 
