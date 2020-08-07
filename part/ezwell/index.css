@@ -362,12 +362,20 @@ label[for] {
 
 
 
-/* 로고 */
+/* 로고 시작 */
+
+.top-bar > logo {
+
+}
+
+
+
+
+/* 로고 끝 */
 
 
 /* 1차 메뉴 아이템 시작 */
 
-.top-bar>.menu-box-1>ul {}
 
 
 .top-bar>.menu-box-1>ul>li {
@@ -375,16 +383,36 @@ label[for] {
     position: relative;
 }
 
+.top-bar>.menu-box-1>ul>li>a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    bottom:0;
+    left: 50%;
+    background-color: #295ebe;
+    transition: width .5s;
+    transform: translateX(-50%);
+}
+
+.top-bar>.menu-box-1>ul>li:hover>a::after {
+    width:100%;
+}
+
+
 .top-bar>.menu-box-1>ul>li>a {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
+    position: relative;
 }
 
 .top-bar.hover {
     background-color: white;
     color: black;
     opacity: 0.9;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+   
 }
 
 .top-bar>.menu-box-1>ul>li:hover>a {
