@@ -427,12 +427,15 @@ body {
     left: 0;
     top: 100%;
     width: 100%;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     
   }
   
   .top-bar > .menu-box-1:hover > ul ul {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s;
   }
   
   .top-bar > .menu-box-1 > ul ul > li > a {
